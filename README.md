@@ -1,3 +1,45 @@
+This project was an attempt of the Heart Murmur Detection from Phonocardiogram Recordings: The George B. Moody PhysioNet Challenge 2022.
+
+# Dataset exploration and Analysis
+
+The dataset was explored and various charts and figures were plotted in Matplotlib and Seaborn to understand the data better. The dataset was also cleaned and preprocessed to remove any missing values and outliers. The dataset was then split into training, validation, and test sets for training and evaluation of the machine learning models.
+
+<img src="./figures/height_vs_weight.png" alt="Height vs Weight curve" width="400">
+
+<img src="./figures/age_distribution.png" alt="Age Distribution" width="400">
+
+<img src="./figures/sex_distribution.png" alt="Sex Distribution" width="400">
+
+## Murmur Details
+
+<img src="./figures/murmur_distribution.png" alt="Murmur Distribution" width="400">
+
+<img src="./figures/murmur_presence.png" alt="Murmur Presence" width="400">
+
+<img src="./figures/murmur_by_recording_area.png" alt="Murmur By Recording Area" width="400">
+
+## Processing Pipeline
+
+<img src="./figures/prcessing_pipeline.png" alt="Processing Pipeline" width="500">
+
+### Age Imputation with KNN
+
+Age was imputed using the KNN algorithm. The KNN algorithm was used to find the nearest neighbors of the missing age value and then the missing age value was imputed with the average of the nearest neighbors.
+
+### Height Imputation with Polynimial Regression
+
+<img src="./figures/height_imputation.png" alt="Height Pipeline" width="500">
+
+# Results
+
+<img src="./figures/results.png" alt="Results" width="500">
+
+## Confusion Matrices
+
+0 = Murmur, 1 = No Murmur
+
+<img src="./figures/confusion_matrices.png" alt="Results" width="600">
+
 # Prerequisites & Setup
 
 `new_team_code.py` works on the train, validation, and test .csv and audio files and due to their size, we had to upload the audio files to Google Drive.
